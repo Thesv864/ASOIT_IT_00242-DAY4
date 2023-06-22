@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<title>CSS Hover Element - Selector OR Child Combinator</title>
+		<style type="text/css">
+			#MainUL li ul li{display:none;}
+			#MainUL li:hover ul li{display:block;}
+			#MainUL li:hover ul li ul li{display:none;}
+			#MainUL li ul li:hover ul li{display:block;}
+			#MainUL li ul li:hover ul li ul li{display:none;}
+			#MainUL li ul li ul li:hover ul li{display:block;}
+		</style>
+        <head>
+            <style type="text/css">
+                .container-img {
+                  position: relative;
+                  width: 100%;
+                
+                }
+    
+                .image {
+                  display: block;
+                  width: 75%;
+                  height: 100%;
+                  transition:1s;
+                
+                }
+    
+                .overlay {
+                  position:absolute;
+                  top: 0;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  height: 100%;
+                  opacity:0;
+                  transition: 1s;
+                  background-color:rgba(0,0,0,0.7);
+                  text-align: center;
+                }
+    
+                .container-img:hover .overlay {
+                  opacity:1;
+                }
+                .container-img:hover .image
+                 {
+                  
+                  transform:scale(1.5);
+    
+                }
+                .text {
+                  color: white;
+                  font-size: 3ch;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  -webkit-transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                  -o-transform: translate(-50%, -50%);
+                  -moz-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+                  text-align: center;
+                  
+                }
+            </style>
+        </head>
+		
+	</head>
+	<body>
+		
+		
+
+        <div align="center">
+            <h2>Image Overlay Effect</h2>
+          
+            <div class="container-img">
+
+              <img src="stock-photo-142984111.jpg" alt="Demo Image" class="image">
+              <div class="overlay">
+                Welcome To our Site
+                  <div class="text" >
+                    <ul id="MainUL">
+                        <li>
+                            <img src="lion.png" height="40">
+                            Google
+                            <ul>
+                                <li>Gmail
+                                    <ul>
+                                        <li>Sign Up</li>
+                                        <li>Sign In
+                                            <ul>
+                                                <li>Sign In As Admin</li>
+                                                <li>Sign In As Member</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Youtube</li>
+                                <li>GDrive</li>
+                                <li>GMap</li>
+                            </ul>
+                        </li>
+                        <li>Facebook</li>
+                        <li>Microsoft
+                            <ul>
+                                <li>Bing</li>
+                                <li>Linked In</li>
+                            </ul>
+                        </li>
+                        <li>MSN</li>
+                        <li>Amazon
+                            <ul>
+                                <li>AWS</li>
+                                <li>Ecommerce</li>
+                                <li>A-ML</li>
+                            </ul>
+                        </li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+		
+	</body>
+</html>

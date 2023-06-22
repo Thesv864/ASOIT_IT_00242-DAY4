@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <title>Demo CSS3</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+                <style type="text/css">
+                    #I{font-size:50px;color:red;}
+                </style>
+        <style type="text/css">
+			#MainUL li ul li{display:none;}
+			#MainUL li:hover ul li{display:block;}
+			#MainUL li:hover ul li ul li{display:none;}
+			#MainUL li ul li:hover ul li{display:block;}
+			#MainUL li ul li:hover ul li ul li{display:none;}
+			#MainUL li ul li ul li:hover ul li{display:block;}
+		</style>
+         <style>
+			body{
+                background-color: aqua;
+			}
+		  </style>
+          
+
+        <style type="text/css">
+
+            
+            div
+            {
+                height:200px;
+                width:200px;
+                transition:2s;
+                font-size:20px;
+                font-weight:bold;
+                color:black;
+                background-image: url("bts22.jpg");
+                text-align: center;
+            
+            
+            }
+            
+			#TranslateDiv:hover
+            {
+                -webkit-transform:translate(100px,100px);
+                   -moz-transform:translate(100px,100px);
+                    -ms-transform:translate(100px,100px);
+                     -o-transform:translate(100px,100px);
+                        transform:translate(100px,100px);
+                      background-color:Blue;
+                      color:Yellow; 
+                      margin-bottom: 10px;
+                    
+            }
+			
+            #RotateDiv:hover
+            {
+                -webkit-transform:rotate(360deg);
+                   -moz-transform:rotate(360deg);
+                    -ms-transform:rotate(360deg);
+                     -o-transform:rotate(360deg);
+                        transform:rotate(360deg);
+                      background-color:Blue;
+                      color:Yellow; 
+         
+            }
+			#RotateDiv3D:hover{
+				-webkit-transform:rotate3d(1,1,0,360deg);
+                   -moz-transform:rotate3d(1,1,0,360deg);
+                    -ms-transform:rotate3d(1,1,0,360deg);
+                     -o-transform:rotate3d(1,1,0,360deg);
+                        transform:rotate3d(1,1,0,360deg);
+                      background-color:Blue;
+                      color:Yellow; 
+         
+			}
+            #SkewDiv:hover
+            {
+                -webkit-transform:skew(45deg);
+                   -moz-transform:skew(45deg);
+                    -ms-transform:skew(45deg);
+                     -o-transform:skew(45deg);
+                        transform:skew(45deg);
+                      background-color:Blue;
+                      color:Yellow; 
+            }
+            #ScaleDiv:hover
+            {
+                -webkit-transform:scale(1.5,0.5);
+                   -moz-transform:scale(1.5,0.5);
+                    -ms-transform:scale(1.5,0.5);
+                     -o-transform:scale(1.5,0.5);
+                        transform:scale(1.5,0.5);
+                      background-color:Blue;
+                      color:Yellow; 
+            }
+            #OpacityDiv:hover
+            {
+                opacity:0;
+            }
+            #RGBADiv:hover
+            {
+                background:rgba(128,128,0,0.5);
+            }
+            #BoxShadowDiv:hover
+            {
+                box-shadow:0px 0px 30px Blue;
+            }
+            #TextShadowDiv:hover
+            {
+                text-shadow:3px 3px 3px yellow;
+            }
+			#BorderRadiusDiv:hover
+			{
+				border-radius:50%;
+			}
+			#OverFlowDiv{overflow:auto;}
+        </style>
+	</head>
+    <body>
+        
+        <div id="TranslateDiv" style="height: 300px; width: 300px;">Translate
+            <div class="text" >
+                <ul id="MainUL">
+                    <li>
+                    
+                        Google
+                        <ul>
+                            <li>Gmail
+                                <ul>
+                                    <li>Sign Up</li>
+                                    <li>Sign In
+                                        <ul>
+                                            <li>Sign In As Admin</li>
+                                            <li>Sign In As Member</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Youtube</li>
+                            <li>GDrive</li>
+                            <li>GMap</li>
+                        </ul>
+                    </li>
+                    <li>Facebook</li>
+                    <li>Microsoft
+                        <ul>
+                            <li>Bing</li>
+                            <li>Linked In</li>
+                        </ul>
+                    </li>
+                    <li>MSN</li>
+                    <li>Amazon
+                        <ul>
+                            <li>AWS</li>
+                            <li>Ecommerce</li>
+                            <li>A-ML</li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
+        </div><hr />
+        <div id="RotateDiv" style="height: 300px;width: 300px;">Rotate
+            <div class="text" >
+                <ul id="MainUL">
+                    <li>
+                        Google
+                        <ul>
+                            <li>Gmail
+                                <ul>
+                                    <li>Sign Up</li>
+                                    <li>Sign In
+                                        <ul>
+                                            <li>Sign In As Admin</li>
+                                            <li>Sign In As Member</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Youtube</li>
+                            <li>GDrive</li>
+                            <li>GMap</li>
+                        </ul>
+                    </li>
+                    <li>Facebook</li>
+                    <li>Microsoft
+                        <ul>
+                            <li>Bing</li>
+                            <li>Linked In</li>
+                        </ul>
+                    </li>
+                    <li>MSN</li>
+                    <li>Amazon
+                        <ul>
+                            <li>AWS</li>
+                            <li>Ecommerce</li>
+                            <li>A-ML</li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
+        </div><hr />
+		
+		<div id="RotateDiv3D" style="font-size: 30px;width: 300px;">
+        	
+        
+                <span class="fa fa-list-ul" id="I"></span><hr/>
+                <i class="fa fa-area-chart" style="font-size:25px;color:red;"></i><hr/>
+                <i class="fa fa-arrow-circle-up" style="font-size:25px;color:red;"></i><hr/>
+           
+        </div><hr />
+        <div id="SkewDiv" style="font-size: 30px;width: 300px;">Skew</div><hr />
+        <div id="ScaleDiv" style="font-size: 30px;width: 300px;">Scale</div><hr />
+        <div id="OpacityDiv" style="font-size: 30px;width: 300px;">Opacity</div><hr />
+        <div id="RGBADiv" style="font-size: 30px;width: 300px;">RGBA</div><hr />
+        <div id="BoxShadowDiv" style="font-size: 30px;width: 300px;">Box-Shadow</div><hr />
+        <div id="TextShadowDiv" style="font-size: 30px;width: 300px;">Text-Shadow</div><hr />
+		<div id="BorderRadiusDiv" style="font-size: 30px;width: 300px;">Border Radius</div><hr />
+       
+		<div id="OverFlowDiv" style="font-size: 30px;width: 300px;">Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow
+          
+         </div><hr />
+        
+    </body>
+</html>
